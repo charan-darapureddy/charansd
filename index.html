@@ -15,39 +15,25 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-    h1 {
-    font-size: 42px;
-    margin-bottom: 4px;
+    #welcome-screen h1 {
+    font-size: 45px;
+    margin-bottom: 5px;
     letter-spacing: 1px;
     }
-    h2 {
+    #welcome-screen h2 {
     font-size: 36px;
     margin: 5px 0;
         letter-spacing: 1px;
     }
-    p {
+    #welcome-screen p {
     font-size: 18px;
     margin-top: 4px;
     letter-spacing: 1px;
     }
     #welcome-screen {
-    animation: fadeOut 2s ease-in 4s forwards;
+    animation: fadeOut 2s ease-in 6s forwards;
     }
-    @keyframes portfolioFadeIn {
-    from {
-        opacity: 0;
-    }
-        to {
-        opacity: 1;  
-        }
-    }
-    #portfolio {
-    opacity: 0;
-    animation: portfolioFadeIn 2s ease-in 5s forwards;
-    }
-    h1, h2, p {
-    animation: fadeIn 3s ease-in;
-    }
+    {
     @keyframes fadeIn {
     from {
         opacity: 0;
@@ -62,6 +48,25 @@ align-items: center;
     to {
         opacity: 0; }
     }
+   
+    #welcome-screen h1,
+#welcome-screen h2,
+#welcome-screen p {
+    animation: fadeIn 3s ease-in;
+}
+    #portfolio {
+    opacity: 0;
+    animation: portfolioFadeIn 2s ease-in 5s forwards;
+    }
+     @keyframes portfolioFadeIn {
+    from {
+        opacity: 0;
+    }
+        to {
+        opacity: 1;  
+        }
+     }
+    
   </style>
 </head>
 <body>
