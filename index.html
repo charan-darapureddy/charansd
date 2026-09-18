@@ -2,89 +2,92 @@
 <html>
 <head>
 <title>Charan Darapureddy</title>
+
 <style>
+
 body {
     text-align: center;
     background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  min-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-    #welcome-screen h1 {
+
+/* Welcome Screen */
+
+#welcome-screen h1 {
     font-size: 45px;
     margin-bottom: 5px;
     letter-spacing: 1px;
-    }
-    #welcome-screen h2 {
+}
+
+#welcome-screen h2 {
     font-size: 36px;
     margin: 5px 0;
-        letter-spacing: 1px;
-    }
-    #welcome-screen p {
+    letter-spacing: 1px;
+}
+
+#welcome-screen p {
     font-size: 18px;
     margin-top: 4px;
     letter-spacing: 1px;
-    }
-    #welcome-screen {
+}
+
+#welcome-screen {
     animation: fadeOut 2s ease-in 6s forwards;
-    }
-    {
-    @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;    }
-    }
-    @keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0; }
-    }
-   
-    #welcome-screen h1,
+}
+
+#welcome-screen h1,
 #welcome-screen h2,
 #welcome-screen p {
     animation: fadeIn 3s ease-in;
 }
-    #portfolio {
-    opacity: 0;
-    animation: portfolioFadeIn 2s ease-in 5s forwards;
-    }
-     @keyframes portfolioFadeIn {
+
+/* Fade In */
+
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
-        to {
-        opacity: 1;  
-        }
-     }
-    
-  </style>
-</head>
-<body>
-    <div id="welcome-screen">
-  <h1>Welcome to My Professional Portfolio</h1>
-<h2>CHARAN DARAPUREDDY</h2>
-<p>Mechanical Engineer | QA/QC</p>
-    </div>
-    
-    <div id="portfolio">
-    <h1>My Portfolio</h1>
-    </div>
-</body>
-</html>
-<div class="hero-text">
-    <h1>Hello, I'm Charan Sai Darapureddy.</h1>
-    <p>It's nice to have you here. Welcome to my professional journey.</p>
-</div>
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade Out */
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Portfolio */
+
+#portfolio {
+    opacity: 0;
+    animation: portfolioFadeIn 2s ease-in 5s forwards;
+}
+
+@keyframes portfolioFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hero Text */
+
 .hero-text h1 {
     color: white;
     font-size: 42px;
@@ -94,3 +97,26 @@ align-items: center;
     color: #cccccc;
     font-size: 18px;
 }
+
+</style>
+</head>
+
+<body>
+
+<div id="welcome-screen">
+    <h1>Welcome to My Professional Portfolio</h1>
+    <h2>CHARAN DARAPUREDDY</h2>
+    <p>Mechanical Engineer | QA/QC</p>
+</div>
+
+<div id="portfolio">
+
+    <div class="hero-text">
+        <h1>Hello, I'm Charan Sai Darapureddy.</h1>
+        <p>It's nice to have you here. Welcome to my professional journey.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
