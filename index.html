@@ -1,102 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Charan Darapureddy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+    <title>Charan Darapureddy | Professional Portfolio</title>
 
-body {
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    <style>
 
-/* Welcome Screen */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-#welcome-screen h1 {
-    font-size: 45px;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
-}
+        body {
+            background: #0b0b0b;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
 
-#welcome-screen h2 {
-    font-size: 36px;
-    margin: 5px;
-    letter-spacing: 1px;
-}
+        /* =========================
+           WELCOME SCREEN
+        ========================= */
 
-#welcome-screen p {
-    font-size: 18px;
-    margin-top: 4px;
-    letter-spacing: 1px;
-}
+        #welcome-screen {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
 
-#welcome-screen {
-    animation: fadeOut 2s ease-in 5s forwards;
-}
+            animation: welcomeScreen 7s forwards;
+        }
 
-#welcome-screen h1,
-#welcome-screen h2,
-#welcome-screen p {
-    animation: fadeIn 3s ease-in;
-}
+        #welcome-screen h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
 
-/* Fade In */
+        #welcome-screen h2 {
+            font-size: 42px;
+            letter-spacing: 5px;
+            margin-bottom: 12px;
+        }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+        #welcome-screen p {
+            font-size: 18px;
+            color: #aaaaaa;
+            letter-spacing: 2px;
+        }
 
-/* Fade Out */
 
-    color: #cccccc;
-    }
+        /* =========================
+           WELCOME ANIMATION
+        ========================= */
 
-    @media (max-width: 600px) {
+        @keyframes welcomeScreen {
+
+            0% {
+                opacity: 0;
+            }
+
+            2% {
+                opacity: 1;
+            }
+
+            57% {
+                opacity: 1;
+            }
+
+            86% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+
+        /* =========================
+           MAIN PORTFOLIO
+        ========================= */
+
+        #portfolio {
+            min-height: 100vh;
+            padding-top: 80px;
+
+            opacity: 0;
+            animation: portfolioFade 1s ease forwards;
+            animation-delay: 5s;
+        }
+
+        @keyframes portfolioFade {
+
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        /* =========================
+           MACHINE SPECIFICATIONS
+        ========================= */
+
+        .hero-text {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .machine-title {
+            font-size: 60px;
+            letter-spacing: 6px;
+            margin: 20px 0 5px;
+        }
+
+        .machine-subtitle {
+            font-size: 16px;
+            letter-spacing: 8px;
+            color: #aaaaaa;
+            margin-top: 0;
+        }
+
+        .red {
+            color: red;
+        }
+
+
+        /* =========================
+           MACHINE INTRODUCTION
+        ========================= */
+
         .machine-intro {
+            max-width: 850px;
+            margin: 30px auto;
             padding: 0 20px;
         }
 
         .machine-intro p {
-            font-size: 15px;
-            line-height: 1.7;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 18px;
+            color: #cccccc;
         }
-    }
-</style>
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            #welcome-screen {
+                padding: 20px;
+            }
+
+            #welcome-screen h1 {
+                font-size: 24px;
+            }
+
+            #welcome-screen h2 {
+                font-size: 30px;
+                letter-spacing: 3px;
+            }
+
+            #welcome-screen p {
+                font-size: 15px;
+            }
+
+            #portfolio {
+                padding-top: 50px;
+            }
+
+            .machine-title {
+                font-size: 42px;
+                letter-spacing: 4px;
+            }
+
+            .machine-subtitle {
+                font-size: 12px;
+                letter-spacing: 5px;
+            }
+
+            .machine-intro {
+                padding: 0 20px;
+            }
+
+            .machine-intro p {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+        }
+
+    </style>
 </head>
+
 
 <body>
 
-<div id="welcome-screen">
-    <h1>Welcome to My Professional Portfolio</h1>
-    <h2>CHARAN DARAPUREDDY</h2>
-    <p>Mechanical Engineer | QA/QC</p>
-</div>
+    <!-- WELCOME SCREEN -->
 
-<div id="portfolio">
+    <div id="welcome-screen">
 
-    <div class="hero-text">
-        <h2 class="machine-title"><span class="red">M</span><span class="red">Λ</span>CHI<span class="red">N</span>E</h2>
-        <p class="machine-subtitle">SPECIFICATIONS</p>
+        <h1>Welcome to My Professional Portfolio</h1>
+
+        <h2>CHARAN DARAPUREDDY</h2>
+
+        <p>Mechanical Engineer | QA/QC</p>
+
     </div>
 
-    <div class="machine-intro">
-        <p>My journey in Mechanical Engineering began with a curiosity to understand how things work, why they work, and what lies beneath. My early interest in drawing introduced me to precision, accuracy, and design, leading me towards Design Engineering. With time, the principle “Prevention is better than cure” shifted my focus towards NDT and Inspection. It was a slow beginning, but one that never stopped my progress. Through inspection, I found purpose in examining welds, evaluating material integrity, and ensuring quality and reliability before problems arise. From starting my career in India to gaining industrial exposure in the Gulf, every experience has shaped me both technically and personally. This journey continues as I keep learning, improving, and moving closer to the engineer I aspire to become.</p>
+
+    <!-- MAIN PORTFOLIO -->
+
+    <div id="portfolio">
+
+        <div class="hero-text">
+
+            <h2 class="machine-title">
+                <span class="red">M</span><span class="red">Λ</span>CHI<span class="red">N</span>E
+            </h2>
+
+            <p class="machine-subtitle">
+                SPECIFICATIONS
+            </p>
+
+        </div>
+
+
+        <!-- INTRODUCTION -->
+
+        <div class="machine-intro">
+
+            <p>
+                My journey in Mechanical Engineering began with a curiosity to understand how things work, why they work, and what lies beneath. My early interest in drawing introduced me to precision, accuracy, and design, leading me towards Design Engineering. With time, the principle “Prevention is better than cure” shifted my focus towards NDT and Inspection. It was a slow beginning, but one that never stopped my progress. Through inspection, I found purpose in examining welds, evaluating material integrity, and ensuring quality and reliability before problems arise. From starting my career in India to gaining industrial exposure in the Gulf, every experience has shaped me both technically and personally. This journey continues as I keep learning, improving, and moving closer to the engineer I aspire to become.
+            </p>
+
+        </div>
+
     </div>
 
-</div>
 
 </body>
 </html>
