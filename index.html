@@ -22,299 +22,293 @@
             overflow-x: hidden;
         }
 
-        /* =========================
-           WELCOME SCREEN
-        ========================= */
-
-        #welcome-screen {
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 10;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-            animation: welcomeScreen 5s forwards;
-        }
-
-        #welcome-screen h1 {
-            font-size: 48px;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        #welcome-screen h2 {
-            font-size: 40px;
-            letter-spacing: 5px;
-            margin-bottom: 12px;
-        }
-
-        #welcome-screen p {
-            font-size: 28px;
-            color: #aaaaaa;
-            letter-spacing: 2px;
-        }
-
 
         /* =========================
-           WELCOME ANIMATION
-        ========================= */
+   WELCOME SCREEN
+========================= */
 
-        @keyframes welcomeScreen {
+#welcome-screen {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 
-            0% {
-                opacity: 0;
-            }
-
-            2% {
-                opacity: 1;
-            }
-
-            57% {
-                opacity: 1;
-            }
-
-            86% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-
-
-        /* =========================
-           MAIN PORTFOLIO
-        ========================= */
-
-        #portfolio {
-            min-height: 100vh;
-            padding-top: 80px;
-            opacity: 0;
-            animation: portfolioFade 3s ease forwards;
-            animation-delay: 4.5s;
-        }
-
-        @keyframes portfolioFade {
-
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-
-        /* =========================
-           MACHINE SPECIFICATIONS
-        ========================= */
-
-        .hero-text {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .machine-title {
-            font-size: 60px;
-            letter-spacing: 6px;
-            margin: 20px 0 5px;
-        }
-
-        .machine-subtitle {
-            font-size: 16px;
-            letter-spacing: 8px;
-            color: #aaaaaa;
-            margin-top: 0;
-        }
-
-        .red {
-            color: red;
-        }
-
-
-        /* =========================
-           MACHINE INTRODUCTION
-        ========================= */
-
-        .machine-intro {
-            max-width: 1100px;
-            margin: 1px auto 20px;
-            gap: 30px;
-            padding: 0 20px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .machine-intro p {
-            font-size: 17px;
-            line-height: 1.8;
-            margin-bottom: 18px;
-            color: #cccccc;
-        }
-
-
-        .certifications h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    letter-spacing: 4px;
-    font-size: 28px;
-    margin-bottom: 20px;
-        }
+}
 
-        .certifications {
-    margin-top: 80px;
-        }
-        
-        .cert-container {
 
-            display: flex;
-            justify-content: center;
-            gap: 90px;
-            max-width: 900px;
-            margin-top: 40px;
-        }
-        .cert-circle {
-            width: 150px;
-            height: 150px;
-            border: 2px solid #777;
-            background: #111;
-            color: #fff;
-            font-weight: 700;
-            font-size: 16px;
-            letter-spacing: 1px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        .cert-item {
-            text-align: center;
-            width: 200px;
-        }
-        .cert-item h3 {
-            margin-top: 18px;
-            font-size: 15px;
-            letter-spacing: 1.5px;
-            font-weight: 700;
-            }
-        .cert-item p {
-            margin-top: 6px;
-            font-size: 13px;
-            color: #888;
-            letter-spacing: 0.5px;
-        }
-        
+/* =========================
+   MAIN PORTFOLIO
+========================= */
 
-        /* =========================
-           MOBILE
-        ========================= */
-         .profile-side {
-                flex: 1.2;
-                align-self: flex-start;
-                transform: translateX(-25px);
-            }    
-            .intro-side {
-                flex: 1;
-            } 
+#portfolio {
+    min-height: 100vh;
+    padding-top: 80px;
+    opacity: 0;
+    animation: portfolioFade 3s ease forwards;
+    animation-delay: 4.5s;
+}
 
-        @media (max-width: 600px) {
+@keyframes portfolioFade {
+    from {
+        opacity: 0;
+    }
 
-            #welcome-screen {
-                padding: 20px;
-            }
+    to {
+        opacity: 1;
+    }
+}
 
-            #welcome-screen h1 {
-                font-size: 24px;
-            }
 
-            #welcome-screen h2 {
-                font-size: 30px;
-                letter-spacing: 3px;
-            }
+/* =========================
+   MACHINE SPECIFICATIONS
+========================= */
 
-            #welcome-screen p {
-                font-size: 15px;
-            }
-            .machine-title {
-                font-size: 42px;
-                letter-spacing: 4px;
-            }
-
-            .machine-subtitle {
-                font-size: 20px;
-                letter-spacing: 6px;
-                font-weight: 700;
-            }
-
-            .machine-intro {
-                max-width: 1100px;
-                margin: 30px auto;
-                padding: 0 20px;
-                display: flex;
-                gap: 60px;
-            }
-           
-
-            .machine-intro p {
-                font-size: 19px;
-                line-height: 1.5;
-            }
-        }
-        .profile-side {
+.hero-text {
     text-align: center;
-        }
-        .profile-side img {
-    width: 400px;
+    margin-bottom: 30px;
+}
+
+.machine-title {
+    font-size: 60px;
+    letter-spacing: 6px;
+    margin: 20px 0 5px;
+}
+
+.machine-subtitle {
+    font-size: 16px;
+    letter-spacing: 8px;
+    color: #aaaaaa;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.red {
+    color: red;
+}
+
+
+/* =========================
+   PROFILE + INTRODUCTION
+========================= */
+
+.machine-intro {
+    max-width: 1100px;
+    margin: 20px auto 20px;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.machine-intro p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #cccccc;
+}
+
+.profile-side {
+    flex: 1.2;
+    align-self: flex-start;
+    text-align: center;
+    transform: translateX(-10px);
+}
+
+.intro-side {
+    flex: 1;
+}
+
+.profile-side img {
+    width: 320px;
     height: auto;
     object-fit: contain;
-        }
-        .profile-side h3 {
+}
+
+.profile-side h3 {
     margin-top: 15px;
     font-size: 25px;
     letter-spacing: 1px;
-        }
-        .profile-role {
+}
+
+.profile-role {
     margin-top: 10px;
     font-size: 20px;
     color: #aaaaaa;
     letter-spacing: 1px;
-        }
-        .profile-education {
+}
+
+.profile-education {
     margin-top: 2px;
     font-size: 15px;
     color: #888888;
-        }
+}
 
-        .cert-container {
-    gap: 25px;
-    flex-wrap: wrap;
-        }
-        .cert-circle {
-    width: 120px;
-    height: 120px;
-    font-size: 14px;
-        }
-        .cert-item {
-    width: 140px;
+
+/* =========================
+   CERTIFICATION & TRAINING
+========================= */
+
+.certifications {
+    margin-top: 80px;
+}
+
+.certifications h2 {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cert-container {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+.cert-item {
+    text-align: center;
+    width: 200px;
+}
+
+.cert-circle {
+    width: 150px;
+    height: 150px;
+
+    border: 2px solid #777;
+    background: #111;
+    color: #fff;
+
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
 }
 
 .cert-item h3 {
-    font-size: 13px;
-    letter-spacing: 1px;
+    margin-top: 18px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
 }
-        .cert-item p {
-    font-size: 12px;
-    margin-top: 5px;
-        }
+
+.cert-item p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #888;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    #welcome-screen {
+        padding: 20px;
+    }
+
+    #welcome-screen h1 {
+        font-size: 24px;
+    }
+
+    #welcome-screen h2 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    #welcome-screen p {
+        font-size: 15px;
+    }
+
+
+    .machine-title {
+        font-size: 42px;
+        letter-spacing: 4px;
+    }
+
+    .machine-subtitle {
+        font-size: 20px;
+        letter-spacing: 6px;
+        font-weight: 700;
+    }
+
+
+    .machine-intro {
+        max-width: 1100px;
+        margin: 30px auto;
+        padding: 0 20px;
+
+        display: flex;
+        gap: 60px;
+    }
+
+    .machine-intro p {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+
+    .profile-side img {
+        width: 120px;
+    }
+
+    .profile-side h3 {
+        font-size: 13px;
+    }
+
+    .profile-role {
+        font-size: 14px;
+    }
+
+    .profile-education {
+        font-size: 12px;
+    }
+
+
+    .cert-container {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .cert-circle {
+        width: 120px;
+        height: 120px;
+        font-size: 14px;
+    }
+
+    .cert-item {
+        width: 140px;
+    }
+
+    .cert-item h3 {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .cert-item p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
 
     </style>
 </head>
