@@ -40,6 +40,28 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    animation: welcomeFade 4.5s ease forwards;
+}
+
+@keyframes welcomeFade {
+    0% {
+        opacity: 0;
+    }
+
+    22% {
+        opacity: 1;
+    }
+
+    78% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
 
@@ -310,6 +332,27 @@
     }
 }
 
+        .system-overview {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.system-overview h2 {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.spec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 40px;
+}
+
+
+        
     </style>
 </head>
 
@@ -381,6 +424,19 @@
             <p>Certificate</p>
         </div>
 
+    </div>
+        </section>
+
+        <section class="system-overview">
+    <h2>SYSTEM OVERVIEW</h2>
+
+    <div class="spec-grid">
+        <div>MODEL <span>CHARAN SAI DARAPUREDDY</span></div>
+        <div>TYPE <span>MECHANICAL ENGINEER</span></div>
+        <div>CORE SYSTEM <span>MECHANICAL ENGINEERING</span></div>
+        <div>INSPECTION <span>NDT & QA/QC</span></div>
+        <div>OPERATING ENVIRONMENT <span>OIL & GAS / INDUSTRIAL</span></div>
+        <div>STATUS <span>CONTINUOUSLY UPGRADING</span></div>
     </div>
         </section>
 
