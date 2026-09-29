@@ -353,13 +353,13 @@
     /* TECHNICAL SKILLS  */
 
         .technical-skills {
-    margin-top: 10;
+    margin-top: 30;
 }
         .technical-skills h2 {
     text-align: center;
     letter-spacing: 5px;
     font-size: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
         .skill-detail {
     display: none;
@@ -368,7 +368,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     margin-top: 35px;
     flex-wrap: wrap;
 }
@@ -395,6 +395,93 @@
     line-height: 1;
 }
 
+        /* EQUIPMENT & SYSTEMS EXPOSURE */
+
+.equipment-exposure {
+    margin-top: 100px;
+}
+
+.equipment-exposure h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.equipment-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.equipment-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: 1px solid #333;
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.equipment-links a:hover {
+    color: #ffffff;
+    border-color: red;
+    transform: translateY(-3px);
+}
+
+.equipment-links a i {
+    display: inline-block;
+    line-height: 1;
+}
+
+.equipment-detail {
+    display: none;
+}
+
+.equipment-detail h3 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.equipment-detail > p {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    color: #b5b5b5;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.equipment-detail-item {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.equipment-detail-item strong {
+    color: #e5e5e5;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.equipment-detail-item p {
+    margin-top: 8px;
+    color: #b5b5b5;
+    font-size: 14px;
+    line-height: 1.7;
+}
+        
 /* =========================
    MOBILE
 ========================= */
@@ -881,8 +968,193 @@
 </div>
 
 </section>
-            
 
+        <section class="equipment-exposure">
+
+    <h2>EQUIPMENT & SYSTEMS EXPOSURE</h2>
+
+    <div class="equipment-links">
+
+        <a href="#reactors" onclick="showEquipment('reactors'); return false;">
+            <i class="fa-solid fa-atom"></i>
+            <span>REACTORS</span>
+        </a>
+
+        <a href="#columns" onclick="showEquipment('columns'); return false;">
+            <i class="fa-solid fa-building"></i>
+            <span>COLUMNS</span>
+        </a>
+
+        <a href="#exchangers" onclick="showEquipment('exchangers'); return false;">
+            <i class="fa-solid fa-arrows-left-right"></i>
+            <span>EXCHANGERS</span>
+        </a>
+
+        <a href="#boilers" onclick="showEquipment('boilers'); return false;">
+            <i class="fa-solid fa-fire"></i>
+            <span>BOILERS</span>
+        </a>
+
+        <a href="#superheaters" onclick="showEquipment('superheaters'); return false;">
+            <i class="fa-solid fa-temperature-high"></i>
+            <span>SUPERHEATERS</span>
+        </a>
+
+        <a href="#piping" onclick="showEquipment('piping'); return false;">
+            <i class="fa-solid fa-pipe"></i>
+            <span>PIPING</span>
+        </a>
+
+        <a href="#tanks" onclick="showEquipment('tanks'); return false;">
+            <i class="fa-solid fa-database"></i>
+            <span>TANKS</span>
+        </a>
+
+    </div>
+
+
+    <div id="reactors" class="equipment-detail">
+
+        <h3>REACTORS</h3>
+
+        <p>
+            Industrial inspection and maintenance exposure involving reactor
+            systems within plant environments.
+        </p>
+
+        <div class="equipment-detail-item">
+            <strong>Inspection Exposure</strong>
+            <p>
+                Exposure to inspection activities involving reactor components,
+                weld areas, and associated maintenance work.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div id="columns" class="equipment-detail">
+
+        <h3>COLUMNS</h3>
+
+        <p>
+            Industrial inspection and maintenance exposure involving process
+            columns in plant environments.
+        </p>
+
+        <div class="equipment-detail-item">
+            <strong>Inspection Exposure</strong>
+            <p>
+                Exposure to inspection activities carried out on column-related
+                components and weld areas during industrial maintenance work.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div id="exchangers" class="equipment-detail">
+
+        <h3>EXCHANGERS</h3>
+
+        <p>
+            Inspection and turnaround maintenance exposure involving heat
+            exchanger systems.
+        </p>
+
+        <div class="equipment-detail-item">
+            <strong>Inspection Exposure</strong>
+            <p>
+                Exposure to inspection activities involving exchanger
+                components and associated weld areas during maintenance work.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div id="boilers" class="equipment-detail">
+
+        <h3>BOILERS</h3>
+
+        <p>
+            Industrial inspection and maintenance exposure involving boiler
+            systems under demanding field conditions.
+        </p>
+
+        <div class="equipment-detail-item">
+            <strong>Inspection Exposure</strong>
+            <p>
+                Exposure to inspection activities involving boiler systems
+                and associated maintenance work.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div id="superheaters" class="equipment-detail">
+
+        <h3>SUPERHEATERS</h3>
+
+        <p>
+            Practical exposure to inspection and maintenance activities
+            involving superheater systems.
+        </p>
+
+        <div class="equipment-detail-item">
+            <strong>Inspection Exposure</strong>
+            <p>
+                Exposure to inspection activities involving superheater
+                components during maintenance work under high-temperature
+                field conditions.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div id="piping" class="equipment-detail">
+
+        <h3>PIPING</h3>
+
+        <p>
+            Industrial piping inspection and turnaround maintenance exposure
+            involving different piping systems.
+        </p>
+
+        <div class="equipment-detail-item">
+            <strong>Air & Polypropylene Piping</strong>
+            <p>
+                Exposure to inspection and turnaround maintenance activities
+                involving air and polypropylene piping systems.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div id="tanks" class="equipment-detail">
+
+        <h3>TANKS</h3>
+
+        <p>
+            Industrial inspection and maintenance exposure involving tank
+            systems within plant environments.
+        </p>
+
+        <div class="equipment-detail-item">
+            <strong>Inspection Exposure</strong>
+            <p>
+                Exposure to inspection and maintenance activities involving
+                tank-related components and work areas.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+            
   <section id="find-me-online">
 
     <h2>FIND ME ONLINE</h2>
@@ -922,6 +1194,19 @@
       </section>
         <script>
 function showSkill(id) {
+    const section = document.getElementById(id);
+
+    if (section.style.display === "block") {
+        section.style.display = "none";
+    } else {
+        section.style.display = "block";
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+}
+            function showEquipment(id) {
     const section = document.getElementById(id);
 
     if (section.style.display === "block") {
