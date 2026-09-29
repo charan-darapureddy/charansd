@@ -349,6 +349,12 @@
     font-size: 30px;
     margin-bottom: 20px;
 }
+
+    /* TECHNICAL SKILLS  */
+
+        .skill-detail {
+    display: none;
+}
         
 /* MOBILE */
 
@@ -625,6 +631,94 @@
     from basic field practices to professional inspection work.
 </p>
 
+            <section class="technical-skills">
+
+    <h2>TECHNICAL SKILLS</h2>
+
+    <div class="skill-links">
+
+        <a href="#inspection-skills" onclick="showSkill('inspection-skills'); return false;">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>NDT & INSPECTION</span>
+        </a>
+        <div id="inspection-skills" class="skill-detail">
+
+    <h3>NDT & INSPECTION</h3>
+
+    <p>
+        Non-Destructive Testing and industrial inspection practices focused on
+        evaluating welds, materials, and components without affecting their integrity.
+    </p>
+
+    <div class="skill-detail-item">
+        <strong>UT — Ultrasonic Testing</strong>
+        <p>
+            Uses high-frequency ultrasonic waves to identify internal and
+            subsurface discontinuities in materials and welds.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>PT — Penetrant Testing</strong>
+        <p>
+            Used to detect surface-breaking discontinuities by applying
+            penetrant to the inspection surface.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>MT — Magnetic Particle Testing</strong>
+        <p>
+            Used to identify surface and near-surface indications in
+            suitable ferromagnetic materials.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Weld Inspection</strong>
+        <p>
+            Inspection of weld areas for visible defects, discontinuities,
+            and quality-related requirements.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Visual Inspection (VT)</strong>
+        <p>
+            Visual examination of welds, components, and surfaces to identify
+            visible imperfections and inspection conditions.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Inspection Reporting</strong>
+        <p>
+            Recording inspection observations, findings, and relevant
+            technical information in inspection documentation.
+        </p>
+    </div>
+
+</div>
+
+        <a href="#mechanical-skills">
+            <i class="fa-solid fa-gears"></i>
+            <span>MECHANICAL</span>
+        </a>
+
+        <a href="#industrial-skills">
+            <i class="fa-solid fa-industry"></i>
+            <span>INDUSTRIAL</span>
+        </a>
+
+        <a href="#software-skills">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>SOFTWARE</span>
+        </a>
+
+    </div>
+
+</section>
+
        <section id="find-me-online">
 
     <h2>FIND ME ONLINE</h2>
@@ -652,7 +746,7 @@
 
         <a href="https://maps.app.goo.gl/B5nXzVA3mcEnWMDo6" target="_blank" aria-label="Location">
     <i class="fa-solid fa-location-dot"></i>
-    <span>B. Savaram, near Sobhana School</span>
+    <span>Location</span>
 </a>
         
         <a href="https://wa.me/919182681248" target="_blank" aria-label="WhatsApp">
@@ -664,7 +758,23 @@
 
 </section>
 
-</section>
+   <script>
+
+function showSkill(id) {
+    const section = document.getElementById(id);
+
+    if (section.style.display === "block") {
+        section.style.display = "none";
+    } else {
+        section.style.display = "block";
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+}
+
+</script>
 
             
 
