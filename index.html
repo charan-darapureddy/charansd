@@ -355,6 +355,17 @@
         .skill-detail {
     display: none;
 }
+        .skill-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-links a i {
+    display: inline-block;
+    line-height: 1;
+}
         
 /* MOBILE */
 
@@ -700,17 +711,17 @@
 
 </div>
 
-        <a href="#mechanical-skills">
+        <a href="#mechanical-skills" onclick="showSkill('mechanical-skills'); return false;">
             <i class="fa-solid fa-gears"></i>
-            <span>MECHANICAL</span>
+            <span>MECHANICAL DESIGNING</span>
         </a>
 
-        <a href="#industrial-skills">
+        <a href="#industrial-skills" onclick="showSkill('industrial-skills'); return false;">
             <i class="fa-solid fa-industry"></i>
-            <span>INDUSTRIAL</span>
+            <span>INDUSTRIAL SAFETY</span>
         </a>
 
-        <a href="#software-skills">
+        <a href="#software-skills" onclick="showSkill('software-skills'); return false;">
             <i class="fa-solid fa-laptop-code"></i>
             <span>SOFTWARE</span>
         </a>
@@ -774,6 +785,133 @@ function showSkill(id) {
     }
 }
 
+       <div id="mechanical-skills" class="skill-detail">
+
+    <h3>MECHANICAL DESIGNING</h3>
+
+    <p>
+        Mechanical design and drafting skills focused on technical drawings,
+        dimensional understanding, and practical engineering applications.
+    </p>
+
+    <div class="skill-detail-item">
+        <strong>AutoCAD — 2D & 3D</strong>
+        <p>
+            Creating and understanding two-dimensional and three-dimensional
+            mechanical drawings and technical layouts.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Engineering Drawing Reading</strong>
+        <p>
+            Reading and interpreting engineering drawings, dimensions,
+            symbols, and technical details.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Dimensional Inspection</strong>
+        <p>
+            Understanding and checking component dimensions against
+            specified technical requirements.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Mechanical Engineering Fundamentals</strong>
+        <p>
+            Practical understanding of mechanical systems, components,
+            materials, and basic engineering principles.
+        </p>
+    </div>
+
+</div>
+       <div id="industrial-skills" class="skill-detail">
+
+    <h3>INDUSTRIAL SAFETY</h3>
+
+    <p>
+        Industrial safety awareness developed through practical exposure
+        to industrial inspection and maintenance environments.
+    </p>
+
+    <div class="skill-detail-item">
+        <strong>Industrial Safety Sessions</strong>
+        <p>
+            Participation in safety sessions covering safe working practices,
+            site hazards, and industrial safety awareness.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Permit to Work (PTW)</strong>
+        <p>
+            Understanding of permit-based work practices used to control
+            and authorize activities in industrial environments.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Toolbox Talks / Safety Meetings</strong>
+        <p>
+            Participation in toolbox talks and safety meetings focused on
+            job-specific hazards and safe work practices.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Turnaround Maintenance Exposure</strong>
+        <p>
+            Safety awareness developed through exposure to turnaround
+            maintenance activities in industrial plant environments.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Site Inspection Practices</strong>
+        <p>
+            Following site safety requirements while carrying out
+            inspection activities in industrial work areas.
+        </p>
+    </div>
+
+</div>
+
+       <div id="software-skills" class="skill-detail">
+
+    <h3>SOFTWARE</h3>
+
+    <p>
+        Practical software skills used for technical documentation,
+        engineering-related work, and professional communication.
+    </p>
+
+    <div class="skill-detail-item">
+        <strong>Microsoft Word</strong>
+        <p>
+            Preparing and formatting professional documents,
+            reports, and technical documentation.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Microsoft Excel</strong>
+        <p>
+            Working with data, tables, records, calculations,
+            and structured technical information.
+        </p>
+    </div>
+
+    <div class="skill-detail-item">
+        <strong>Microsoft PowerPoint</strong>
+        <p>
+            Creating professional presentations and organizing
+            technical information in a clear visual format.
+        </p>
+    </div>
+
+</div>
 </script>
 
             
