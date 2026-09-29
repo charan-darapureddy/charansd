@@ -388,12 +388,6 @@
     display: inline-block;
     line-height: 1;
 }
-        
-/* MOBILE */
-
-@media (max-width: 600px) {
-    ...
-}
 
 /* =========================
    MOBILE
@@ -664,6 +658,7 @@
     from basic field practices to professional inspection work.
 </p>
 </div>
+        </section>
         
             <section class="technical-skills">
 
@@ -691,7 +686,6 @@
             subsurface discontinuities in materials and welds.
         </p>
     </div>
-        </section>
 
     <div class="skill-detail-item">
         <strong>PT — Penetrant Testing</strong>
@@ -752,46 +746,6 @@
 
     </div>
 
-</section>
-
-       <section id="find-me-online">
-
-    <h2>FIND ME ONLINE</h2>
-
-    <div class="social-links">
-
-        <a href="https://www.linkedin.com/in/charan-darapureddy-04b844380" target="_blank" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-        <span>LinkedIn</span>
-    </a>
-
-        <a href="https://www.instagram.com/cherry_charan_2814?stkn=MWk1ZTZvYWVocWhobQ==" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-            <span>Instagram</span>
-        </a>
-        <a href="https://www.facebook.com/share/19Stkn5ARj/" target="_blank" aria-label="Facebook">
-    <i class="fa-brands fa-facebook-f"></i>
-    <span>Facebook</span>
-</a>
-
-        <a href="mailto:charan.sai6312@gmail.com" aria-label="Email">
-    <i class="fa-solid fa-envelope"></i>
-    <span>Email</span>
-</a>
-
-        <a href="https://maps.app.goo.gl/B5nXzVA3mcEnWMDo6" target="_blank" aria-label="Location">
-    <i class="fa-solid fa-location-dot"></i>
-    <span>Location</span>
-</a>
-        
-        <a href="https://wa.me/919182681248" target="_blank" aria-label="WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-    <span>WhatsApp</span>
-</a>
-
-    </div>
-
-</section>
        <div id="mechanical-skills" class="skill-detail">
 
     <h3>MECHANICAL DESIGNING</h3>
@@ -920,8 +874,61 @@
 
 </div>
 
+</section>
             
 
+  <section id="find-me-online">
+
+    <h2>FIND ME ONLINE</h2>
+
+    <div class="social-links">
+
+        <a href="https://www.linkedin.com/in/charan-darapureddy-04b844380" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <span>LinkedIn</span>
+    </a>
+
+        <a href="https://www.instagram.com/cherry_charan_2814?stkn=MWk1ZTZvYWVocWhobQ==" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/share/19Stkn5ARj/" target="_blank" aria-label="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+    <span>Facebook</span>
+</a>
+
+        <a href="mailto:charan.sai6312@gmail.com" aria-label="Email">
+    <i class="fa-solid fa-envelope"></i>
+    <span>Email</span>
+</a>
+
+        <a href="https://maps.app.goo.gl/B5nXzVA3mcEnWMDo6" target="_blank" aria-label="Location">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Location</span>
+</a>
+        
+        <a href="https://wa.me/919182681248" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp</span>
+</a>
+
+    </div>
+      </section>
+        <script>
+function showSkill(id) {
+    const section = document.getElementById(id);
+
+    if (section.style.display === "block") {
+        section.style.display = "none";
+    } else {
+        section.style.display = "block";
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+}
+</script>
 
         
     </div>
